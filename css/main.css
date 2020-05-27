@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* auto hide navbar */
+
+.smart-scroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+/* fullsrceen section page */
+
+section {
+    display: block;
+    background: #CFF;
+    height: calc(100% + 56px);
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.duration {
+    color: #cf4c4c;
+}
+
+/* about */
+
+#about {
+    background: #111816;
+    color: #fff;
+    font-size: 24px;
+}
+
+#about .about-img {
+    text-align: center;
+}
+
+#about img {
+    width: 40%;
+    float: left;
+    shape-outside: circle();
+    padding: 30px;
+}
+
+#about h1 {
+    text-align: center;
+    margin: 30px;
+}
+
+#about p {
+    text-align: justify;
+    font-size: 22px;
+}
+
+#about .about-contact p a {
+    color: #cf4c4c;
+    text-decoration: none;
+}
+
+/* experience */
+
+#experience {
+    background: #123037;
+    color: #fff;
+    font-size: 22px;
+    text-align: justify;
+}
+
+#experience .title {
+    font-size: 26px;
+}
+
+#experience .info .subtitle {
+    color: violet;
+}
+
+#experience .info .subtitle span {
+    float: right;
+}
+
+#education {
+    background: #74BE98;
+    font-size: 24px;
+    color: white;
+}
+
+#education .title {
+    font-size: 26px;
+}
+
+#education .content {
+    margin: 5px;
+}
+
+#education .content img {
+    width: 80%;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    margin: 10px;
+}
+
+#education .content span {
+    float: right;
+}
+
+#skills {
+    background: #BED28D;
+    font-size: 24px;
+}
+#skills ul li {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+#skills .skill_name i{
+    font-size: 30px;
+}
+#skills .skill_progress {
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background: #74BE98;
+    position: relative;
+}
+
+#skills .skill_per {
+    width: 15%;
+}
+
+#skills .skill_progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    section {
+        padding: 20px;
+    }
+    #about p {
+        font-size: 16px;
+    }
+    #about h1 {
+        margin: 22px;
+    }
+    #about img {
+        width: 90%;
+        float: none;
+        shape-outside: none;
+    }
+    #experience {
+        font-size: 16px;
+    }
+    #education {
+        font-size: 16px;
+        text-align: center;
+    }
+    #education .content img {
+        width: 90%;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+        margin: 10px;
+    }
+    #skills {
+        font-size: 16px;
+    }
+}
