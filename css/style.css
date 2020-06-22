@@ -9,7 +9,8 @@
 
 html, body {
     height: 100%;
-    width: 100%;
+    width: 100%;    
+    
 }
 
 /* auto hide navbar */
@@ -36,7 +37,7 @@ html, body {
 
 section {
     display: block;
-    background: #CFF;
+    background: #123037;
     height: calc(100% + 56px);
     width: 100%;
     padding: 50px;
@@ -50,7 +51,6 @@ section {
 /* about */
 
 #about {
-    background: #111816;
     color: #fff;
     font-size: 24px;
 }
@@ -84,7 +84,6 @@ section {
 /* experience */
 
 #experience {
-    background: #123037;
     color: #fff;
     font-size: 22px;
     text-align: justify;
@@ -103,7 +102,6 @@ section {
 }
 
 #education {
-    background: #74BE98;
     font-size: 24px;
     color: white;
 }
@@ -128,8 +126,8 @@ section {
 }
 
 #skills {
-    background: #BED28D;
     font-size: 24px;
+    color: #fff;
 }
 #skills ul li {
     display: flex;
@@ -144,7 +142,7 @@ section {
     width: 60%;
     margin: 0 5px;
     height: 5px;
-    background: #74BE98;
+    background: #cf4c4c;
     position: relative;
 }
 
